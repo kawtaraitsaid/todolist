@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import TodoList from "./TodoList";
 import DataTable from "./table";
+import Calclator from "./calulator/calculator";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,6 +33,7 @@ function App() {
         <button className="btn2">Edit</button>
       </div> */}
       {TodoList()}
+      <Calclator />
       <DataTable />
     </>
   );
