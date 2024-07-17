@@ -4,11 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import TodoList from "./TodoList";
 import DataTable from "./table";
+import Mycalc from "./Mycalc";
 import Calclator from "./calulator/calculator";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
@@ -19,21 +18,12 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      {/* <h1>Vite + React</h1> */}
       <div className="card">
         <p className="test">first try</p>
-        {/* <input type="text" placeholder="search"></input>
-        <button>Add</button> */}
-        {/* <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button> */}
       </div>
-      {/* <div className="cart2">
-        <button className="btn1">Delete</button>
-        <button className="btn2">Edit</button>
-      </div> */}
       {TodoList()}
       <Calclator />
+      <Mycalc />
       <DataTable />
     </>
   );
